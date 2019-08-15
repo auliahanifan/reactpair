@@ -8,7 +8,9 @@ export const store = createStore({
   keyword: "",
   values: [],
   question: "",
-  pic: ""
+  pic: "",
+  listName: [],
+  gender: ""
 });
 
 export const actions = store => ({
@@ -35,5 +37,14 @@ export const actions = store => ({
   },
   setPic(state, value) {
     return { pic: value };
+  },
+  ubahMale: state => {
+    store.setState({ gender: "male" });
+  },
+  ubahFemale: state => {
+    store.setState({ gender: "female" });
+  },
+  ubahListName: (state, baru) => {
+    store.setState({ listName: baru });
   }
 });

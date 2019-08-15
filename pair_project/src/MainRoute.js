@@ -6,6 +6,8 @@ import { connect } from "unistore/react";
 import { actions } from "./store";
 import YesNo from "./pages/yesno/YesNo";
 import SignIn from "./pages/signin/SignIn";
+import CariJodoh from "./pages/caripasangan/CariPasangan1";
+import OhJodohKu from "./pages/caripasangan/CariPasangan2";
 
 // import { Redirect } from 'react-router-dom';
 
@@ -30,6 +32,8 @@ class MainRoute extends React.Component {
           <Route exact path="/" component={Home} />
           <Route path="/signin" component={SignIn} />
           <Route path="/yesno" component={YesNo} />
+          <Route path="/carijodoh" component={CariJodoh} />
+          <Route path="/ohjodohku" component={OhJodohKu} />
         </Switch>
       </Router>
     );
