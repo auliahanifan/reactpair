@@ -6,6 +6,7 @@ import { connect } from "unistore/react";
 import { actions } from "./store";
 import YesNo from "./pages/yesno/YesNo";
 import SignIn from "./pages/signin/SignIn";
+import Header from "./component/Header";
 
 // import { Redirect } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ class MainRoute extends React.Component {
   render() {
     return (
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/signin" component={SignIn} />
