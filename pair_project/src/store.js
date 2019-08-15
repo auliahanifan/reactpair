@@ -6,7 +6,9 @@ export const store = createStore({
   is_login: false,
   api_key: "",
   keyword: "",
-  values: []
+  values: [],
+  question: "",
+  pic: ""
 });
 
 export const actions = store => ({
@@ -16,16 +18,22 @@ export const actions = store => ({
   setName(state, value) {
     return { full_name: value };
   },
-  setLogin: (state, value) => {
+  setLogin(state, value) {
     return { is_login: value };
   },
-  setKeyword: (state, value) => {
+  setKeyword(state, value) {
     return { keyword: value };
   },
-  setValue: (state, value) => {
+  setValue(state, value) {
     return { values: value };
   },
-  setApiKey: (state, value) => {
+  setApiKey(state, value) {
     return { api_key: value };
+  },
+  setQuestion(state, value) {
+    return { question: value };
+  },
+  setPic(state, value) {
+    return { pic: value };
   }
 });
