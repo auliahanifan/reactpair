@@ -27,7 +27,10 @@ class awalCats extends React.Component {
         <br />
         <div className="container">
           <div className="row text-center justify-content-center">
-            <div className="col-md-10 text-center">
+            <div
+              className="col-md-10 text-center"
+              style={{ color: "#ffffff", fontFamily: '"EB Garamond", serif' }}
+            >
               <h2>Ayo dengar Quotes dari kucing yang bijak</h2>
               <br />
               <Link to="/cats">

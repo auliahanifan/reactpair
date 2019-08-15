@@ -11,7 +11,10 @@ function Header(props) {
   } else {
     return (
       <header>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav
+          class="navbar navbar-dark navbarHitam"
+          style={{ backgroundColor: "#000000" }}
+        >
           <a class="navbar-brand" href="#">
             Time Killer
           </a>
