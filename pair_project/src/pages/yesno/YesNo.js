@@ -1,22 +1,20 @@
 import React from "react";
 import axios from "axios";
 import tongue from "./good.png";
+import { connect } from "unistore/react";
+import { actions } from "../../store";
 
 class YesNo extends React.Component {
   //   state = { link: "https://yesno.wtf/api" };
   constructor(props) {
     super(props);
-    this.state = {
-      question: "",
-      questionSubmit: "",
-      pic: ""
-      //   this.filterCountrySingle = this.filterCountrySingle.bind(this);
-    };
   }
 
   changeHandle = e => {
-    this.setState({ question: e.target.value });
-    this.setState({ pic: "" });
+    this.props.setQuestion(e.target.value);
+    this.props.setPic("");
+    // this.setState({ question: e.target.value });
+    // this.setState({ pic: "" });
   };
 
   submitHandle = () => {
@@ -24,7 +22,8 @@ class YesNo extends React.Component {
     axios
       .get("https://yesno.wtf/api")
       .then(function(response) {
-        self.setState({ pic: response.data.image });
+        self.props.setPic(response.data.image);
+        // self.setState({ pic: response.data.image });
         console.log(response.data.image);
       })
       .catch(function(error) {
@@ -62,15 +61,13 @@ class YesNo extends React.Component {
         </div>
         <div className="row justify-content-center">
           <div className="col-8 text-center">
-            <h6>{this.state.questionSubmit}</h6>
-
             <br />
             <form>
               <div className="form-group">
-                <h2>{this.state.question}</h2>
+                <h2>{this.props.question}</h2>
                 <img
                   height="300 px"
-                  src={this.state.pic}
+                  src={this.props.pic}
                   className="App-logo"
                 />
                 <br />
@@ -102,4 +99,7 @@ class YesNo extends React.Component {
   }
 }
 
-export default YesNo;
+export default connect(
+  "email, full_name, is_login, pic, question",
+  actions
+)(YesNo);

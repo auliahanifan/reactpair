@@ -29,6 +29,7 @@ class MainRoute extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/yesno" component={YesNo} />
         </Switch>
       </Router>
     );
