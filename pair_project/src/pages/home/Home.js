@@ -20,7 +20,8 @@ class Home extends React.Component {
       <div
         className="text-center"
         style={{
-          backgroundImage: `url(${homebg})`,
+          // backgroundImage: `url(${homebg})`,
+          backgroundColor: "#000000",
           height: "800px",
           width: "100%"
         }}

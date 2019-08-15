@@ -40,9 +40,7 @@ function Header(props) {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Login
-                </a>
+                <Link onClick={() => props.setLogin(false)}>Logout</Link>
               </li>
             </ul>
           </div>

@@ -6,6 +6,7 @@
   border-radius: 15px;
 }
 
-.back {
-  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Simple-backgrounds-for-desktop-download.jpg);
+.backCol {
+  background-color: #de3c4b;
+  height: 664px;
 }

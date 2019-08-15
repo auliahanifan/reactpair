@@ -1,7 +1,8 @@
 import React from "react";
+import "./main.css";
 
-import Gambar from "../component/gambarCat";
-import Quotes from "../component/quotesCat";
+import Gambar from "../../component/gambarCat";
+import Quotes from "../../component/quotesCat";
 
 const divStyle = {
   width: "20rem"
@@ -10,7 +11,7 @@ const divStyle = {
 class Cats extends React.Component {
   render() {
     return (
-      <div className="back">
+      <div className="backCol">
         <br />
         <br />
         <br />
@@ -30,14 +31,6 @@ class Cats extends React.Component {
             </div>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </div>
     );
   }
