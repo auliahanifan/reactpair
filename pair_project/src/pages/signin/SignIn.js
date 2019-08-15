@@ -41,7 +41,7 @@ class SignIn extends React.Component {
           width: "100%"
         }}
       >
-        <div className="row justify-content-center">
+        <div className="row justify-content-center animated flipInX">
           <div className="col-6 text-white">
             <div>
               <form style={{ padding: "200px 0px 0px 0px" }}>

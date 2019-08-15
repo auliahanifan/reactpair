@@ -112,7 +112,7 @@ function Home1(props) {
   ];
 
   return (
-    <div>
+    <div className="animated bounce">
       <Container className={classes.root} component="section">
         <Typography variant="h4" marked="center" align="center" component="h2">
           <div className="animated jackInTheBox">Pilih Fiturmu</div>
