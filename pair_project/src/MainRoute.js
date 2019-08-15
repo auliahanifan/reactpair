@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import Home from "./yesno/Home";
+import Home from "./pages/home/Home";
 import { store } from "./store";
 import { connect } from "unistore/react";
 import { actions } from "./store";
-import YesNo from "./yesno/YesNo";
+import YesNo from "./pages/yesno/YesNo";
 
 // import { Redirect } from 'react-router-dom';
 
