@@ -6,6 +6,8 @@ import { connect } from "unistore/react";
 import { actions } from "./store";
 import YesNo from "./pages/yesno/YesNo";
 import SignIn from "./pages/signin/SignIn";
+import CariJodoh from "./pages/caripasangan/CariPasangan1";
+import OhJodohKu from "./pages/caripasangan/CariPasangan2";
 import Header from "./component/Header";
 import Home1 from "./pages/Home1/Home";
 import Cats from "./pages/catquo/fiturCat";
@@ -36,6 +38,8 @@ class MainRoute extends React.Component {
           <Route exact path="/home" component={Home1} />
           <Route path="/signin" component={SignIn} />
           <Route path="/yesno" component={YesNo} />
+          <Route path="/carijodoh" component={CariJodoh} />
+          <Route path="/ohjodohku" component={OhJodohKu} />
           <Route path="/cats" component={Cats} />
           <Route path="/awalcats" component={awalCats} />
         </Switch>
