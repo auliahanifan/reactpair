@@ -13,34 +13,38 @@ class CariPasangan1 extends React.Component {
       return <Redirect to={{ pathname: "/" }} />;
     } else {
       return (
-        <div className="container mt-5">
-          <h1 style={{ textAlign: "center", fontSize: "55px", color: "white" }}>
-            Ayo Pilih Jodohmu
-          </h1>
-          <div className="row justify-content-center mt-5">
-            <div className="col-3 mt-5">
-              <Link onClick={() => this.props.ubahMale()} to="/ohjodohku">
-                <img
-                  style={{
-                    width: "100%",
-                    background: "rgba(255, 255, 255, 0.3)",
-                    borderRadius: "50%"
-                  }}
-                  src={male}
-                />
-              </Link>
-            </div>
-            <div className="col-3 mt-5">
-              <Link onClick={() => this.props.ubahFemale()} to="/ohjodohku">
-                <img
-                  style={{
-                    width: "100%",
-                    background: "rgba(255, 255, 255, 0.3)",
-                    borderRadius: "50%"
-                  }}
-                  src={female}
-                />
-              </Link>
+        <div className="backCol">
+          <div className="container-fluid">
+            <h1
+              style={{ textAlign: "center", fontSize: "55px", color: "white" }}
+            >
+              Ayo Pilih Jodohmu
+            </h1>
+            <div className="row justify-content-center mt-5">
+              <div className="col-3 mt-5">
+                <Link onClick={() => this.props.ubahMale()} to="/ohjodohku">
+                  <img
+                    style={{
+                      width: "100%",
+                      background: "rgba(255, 255, 255, 0.3)",
+                      borderRadius: "50%"
+                    }}
+                    src={male}
+                  />
+                </Link>
+              </div>
+              <div className="col-3 mt-5">
+                <Link onClick={() => this.props.ubahFemale()} to="/ohjodohku">
+                  <img
+                    style={{
+                      width: "100%",
+                      background: "rgba(255, 255, 255, 0.3)",
+                      borderRadius: "50%"
+                    }}
+                    src={female}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

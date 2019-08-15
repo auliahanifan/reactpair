@@ -1,5 +1,6 @@
-body {
-  background-image: url("http://quotesideas.com/wp-content/uploads/2015/08/Best-Autumn-background-wallpaper-quote-hd.jpg");
+.backCol {
+  height: 664px;
+  background-color: #de3c4b;
 }
 .isi img {
   border-radius: 50%;

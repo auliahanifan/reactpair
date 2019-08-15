@@ -18,7 +18,7 @@ class Cats extends React.Component {
         <br />
         <div className="container">
           <div className="row text-center justify-content-center">
-            <div className="col-md-7 cardCat text-center">
+            <div className="col-md-7 text-center">
               <div class="card card-body" style={divStyle}>
                 <Gambar />
                 <div class="card-body">
