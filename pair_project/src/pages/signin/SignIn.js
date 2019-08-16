@@ -43,40 +43,59 @@ class SignIn extends React.Component {
           width: "100%"
         }}
       >
+        <img
+          className="animated slideInRight"
+          src="https://i.pinimg.com/originals/64/f3/4a/64f34ad8ceb3a4d87c1d8715d05254cf.gif"
+        />
         <div className="row justify-content-center animated flipInX">
-          <div className="col-6 text-white">
+          <div className="col-6 col-12 text-white">
             <div>
-              <form style={{ padding: "200px 0px 0px 0px" }}>
-                <div className="form-group">
-                  <h2>Log In Form</h2>
-                  <label htmlFor="exampleInputEmail1">Email address</label>
-                  <div style={{ paddingLeft: "135px" }}>
-                    <input
-                      style={{ width: "350px" }}
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                    />
-                  </div>
+              <form style={{ padding: "30px 0px 0px 0px" }}>
+                <table width="100%">
+                  <tr>
+                    <td align="center">
+                      <div className="form-group">
+                        <h2>Log In Form</h2>
+                        <label htmlFor="exampleInputEmail1">
+                          Email address
+                        </label>
 
-                  <small id="emailHelp" className="form-text text-muted">
-                    We'll never share your email with anyone else.
-                  </small>
-                </div>
-                <div className="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <div style={{ paddingLeft: "135px" }}>
-                    <input
-                      style={{ width: "350px" }}
-                      type="password"
-                      className="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Password"
-                    />
-                  </div>
-                </div>
+                        <div>
+                          <input
+                            style={{ width: "350px" }}
+                            type="email"
+                            className="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter email"
+                          />
+                        </div>
+
+                        <small id="emailHelp" className="form-text text-muted">
+                          We'll never share your email with anyone else.
+                        </small>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <table width="100%">
+                  <tr>
+                    <td align="center">
+                      <div className="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <div>
+                          <input
+                            style={{ width: "350px" }}
+                            type="password"
+                            className="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="Password"
+                          />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
                 <div className="form-group form-check">
                   <input
                     type="checkbox"
