@@ -14,19 +14,21 @@ class SignIn extends React.Component {
   }
 
   postLogin = () => {
+    this.props.setLogin(true);
     console.log("berhasil");
-    const self = this;
-    axios
-      .post("https://api-todofancy.herokuapp.com/api/auth")
-      .then(function(response) {
-        console.log(self.props.is_login);
-        console.log(response.data);
-        self.props.setLogin(true);
-        console.log(self.props.is_login);
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+    this.props.history.push("/carijodoh");
+    // const self = this;
+    // axios
+    //   .post("https://api-todofancy.herokuapp.com/api/auth")
+    //   .then(function(response) {
+    //     console.log(self.props.is_login);
+    //     console.log(response.data);
+    //     self.props.setLogin(true);
+    //     console.log(self.props.is_login);
+    //   })
+    //   .catch(function(error) {
+    //     console.log(error);
+    //   });
   };
 
   render() {
@@ -78,7 +80,7 @@ class SignIn extends React.Component {
               <button
                 type="submit"
                 className="btn btn-primary"
-                onClick={this.postLogin()}
+                onClick={() => this.postLogin()}
               >
                 Submit
               </button>
