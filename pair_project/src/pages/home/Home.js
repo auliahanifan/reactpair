@@ -22,12 +22,16 @@ class Home extends React.Component {
         style={{ backgroundColor: "#34383a", color: "white" }}
       >
         <div className="row justify-content-center">
-          <div className="col-12 text-center">
+          <div className="col-12 text-center mt-4">
+            <img
+              className="animated fadeInDownBig"
+              src="https://pbs.twimg.com/profile_images/2251205169/emot-pocong-by-shudai-ajlani-2528ketawa-merem2529.gif-w_200.gif"
+            />
             <h1
               className="text-white text-center animated fadeInDown"
               style={{
                 fontSize: "100px",
-                padding: "240px 0px 0px 0px",
+                padding: "0px 0px 0px 0px",
                 fontFamily: '"EB Garamond", serif'
               }}
             >

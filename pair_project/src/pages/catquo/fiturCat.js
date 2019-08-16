@@ -25,7 +25,7 @@ class Cats extends React.Component {
           <br />
           <div className="container">
             <div className="row text-center justify-content-center">
-              <div className="col-md-5 text-center">
+              <div className="col-md-5 text-center animated bounce">
                 <table width="100%">
                   <tr>
                     <td align="center">
