@@ -4,7 +4,7 @@ import tongue from "./good.png";
 import { connect } from "unistore/react";
 import { actions } from "../../store";
 import { Redirect } from "react-router-dom";
-import CustomInput from "../coba";
+// import CustomInput from "../coba";
 
 class YesNo extends React.Component {
   //   state = { link: "https://yesno.wtf/api" };
