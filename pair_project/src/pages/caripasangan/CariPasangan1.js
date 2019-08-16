@@ -38,7 +38,7 @@ class CariPasangan1 extends React.Component {
               Ayo Cari Jodohmu
             </h1>
             <div className="row justify-content-center ">
-              <div className="col-2">
+              <div className="col-2 col-6">
                 <form className="animated jackInTheBox">
                   <div className="form-group">
                     <input
@@ -54,7 +54,7 @@ class CariPasangan1 extends React.Component {
               </div>
             </div>
             <div className="row justify-content-center">
-              <div className="col-3">
+              <div className="col-xs-6 col-3">
                 <Link>
                   <img
                     onClick={() => this.submitHandleM()}
@@ -76,7 +76,7 @@ class CariPasangan1 extends React.Component {
                   Male
                 </h1>
               </div>
-              <div className="col-3">
+              <div className="col-xs-6 col-3">
                 <Link>
                   <img
                     onClick={() => this.submitHandleF()}

@@ -6,7 +6,7 @@ import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Gambar from "../../component/gambarCat";
 import Quotes from "../../component/quotesCat";
-import CustomInput from "../coba";
+// import CustomInput from "../coba";
 
 const divStyle = {
   width: "20rem"
