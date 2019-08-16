@@ -15,9 +15,9 @@ function Header(props) {
           class="navbar navbar-dark navbarHitam"
           style={{ backgroundColor: "#000000" }}
         >
-          <a class="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/home">
             Time Killer
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -32,13 +32,16 @@ function Header(props) {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <Link to="/home">
+              <Link className="navbar-brand" to="/home">
                 <li class="nav-item">Home</li>
               </Link>
-              <Link to="/profile">
+              <Link className="navbar-brand" to="/profile">
                 <li class="nav-item">Profile</li>
               </Link>
-              <Link onClick={() => props.setLogin(false)}>
+              <Link
+                className="navbar-brand"
+                onClick={() => props.setLogin(false)}
+              >
                 <li class="nav-item">Logout</li>
               </Link>
             </ul>

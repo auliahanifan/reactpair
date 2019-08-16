@@ -40,7 +40,7 @@ class Home extends React.Component {
           className="text-white animated fadeInRight text-center"
           style={{ fontFamily: '"EB Garamond", serif' }}
         >
-          The Time Killer App
+          Made From Love to Kill Your Time
         </h2>
         <br />
         <br />
