@@ -18,12 +18,10 @@ class Home extends React.Component {
   render() {
     return (
       <div
-        className="text-center"
+        className="container-fluid text-center"
         style={{
           // backgroundImage: `url(${homebg})`,
-          backgroundColor: "#000000",
-          height: "800px",
-          width: "100%"
+          backgroundColor: "#000000"
         }}
       >
         <h1
@@ -57,6 +55,18 @@ class Home extends React.Component {
             </h3>
           </button>
         </Link>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
       </div>
     );
   }

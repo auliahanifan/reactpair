@@ -38,9 +38,7 @@ class SignIn extends React.Component {
         className="text-center container-fluid"
         style={{
           // backgroundImage: `url(${loginbg})`,
-          backgroundColor: "#1D1775",
-          height: "800px",
-          width: "100%"
+          backgroundColor: "#1D1775"
         }}
       >
         <img
@@ -114,6 +112,18 @@ class SignIn extends React.Component {
                   Submit
                 </button>
               </form>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <br />
+              <br />
+              <br />
             </div>
           </div>
         </div>
