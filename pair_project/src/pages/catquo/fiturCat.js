@@ -1,8 +1,8 @@
 import React from "react";
 import "./main.css";
-import { Redirect } from "react-router-dom";
 import { connect } from "unistore/react";
 import { actions } from "../../store";
+import { Redirect } from "react-router-dom";
 
 import Gambar from "../../component/gambarCat";
 import Quotes from "../../component/quotesCat";
@@ -44,6 +44,6 @@ class Cats extends React.Component {
 }
 
 export default connect(
-  "is_login",
+  "email, full_name, is_login, pic, question",
   actions
 )(Cats);

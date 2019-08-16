@@ -6,9 +6,9 @@ import Container from "@material-ui/core/Container";
 import Typography from "../../component/typo";
 import "./home1.css";
 import { Link } from "react-router-dom";
-import { Redirect } from "react-router-dom";
 import { connect } from "unistore/react";
 import { actions } from "../../store";
+import { Redirect } from "react-router-dom";
 
 const styles = theme => ({
   root: {

@@ -12,22 +12,23 @@ import Header from "./component/Header";
 import Home1 from "./pages/Home1/Home";
 import Cats from "./pages/catquo/fiturCat";
 import awalCats from "./pages/catquo/awalCat";
+import { Redirect } from "react-router-dom";
 
 // import { Redirect } from 'react-router-dom';
 
 // const is_login = JSON.parse(localStorage.getItem('is_login'));
 
 class MainRoute extends React.Component {
-  postSignOut = () => {
-    // const self = this;
-    console.log(this.props.is_login);
-    this.props.setLogin(false);
-    console.log(this.props.is_login);
-    // localStorage.setItem('is_login', null);
+  // postSignOut = () => {
+  //   // const self = this;
+  //   console.log(this.props.is_login);
+  //   this.props.setLogin(false);
+  //   console.log(this.props.is_login);
+  // localStorage.setItem('is_login', null);
 
-    // return <Redirect to={{ pathname: '/' }} />;
-    // self.props.history.push('/');
-  };
+  // return <Redirect to={{ pathname: '/' }} />;
+  // self.props.history.push('/');
+  // };
 
   render() {
     return (
