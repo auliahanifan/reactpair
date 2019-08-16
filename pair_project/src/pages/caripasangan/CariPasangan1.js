@@ -10,6 +10,7 @@ import { Redirect } from "react-router-dom";
 class CariPasangan1 extends React.Component {
   render() {
     if (this.props.is_login === false) {
+      console.log("status is login", this.props.is_login);
       return <Redirect to={{ pathname: "/" }} />;
     } else {
       return (
