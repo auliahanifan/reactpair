@@ -4,6 +4,7 @@ import tongue from "./good.png";
 import { connect } from "unistore/react";
 import { actions } from "../../store";
 import { Redirect } from "react-router-dom";
+import CustomInput from "../coba";
 
 class YesNo extends React.Component {
   //   state = { link: "https://yesno.wtf/api" };
@@ -68,7 +69,7 @@ class YesNo extends React.Component {
               <br />
               <form>
                 <div className="form-group">
-                  <h2>{this.props.question}</h2>
+                  <h2 className="text-white">{this.props.question}</h2>
                   <img
                     height="300 px"
                     src={this.props.pic}
@@ -76,6 +77,7 @@ class YesNo extends React.Component {
                   />
                   <br />
                   <label htmlFor="exampleInputEmail1">Type Your Question</label>
+
                   <input
                     type="text"
                     className="form-control"
@@ -85,6 +87,17 @@ class YesNo extends React.Component {
                     onChange={this.changeHandle}
                   />
                 </div>
+                {/* <div>
+                  <CustomInput
+                    type="text"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Type your question here"
+                    onChange={this.changeHandle}
+                  />
+                </div> */}
+
                 <h3 className="bg-danger" onClick={() => this.submitHandle()}>
                   CLICK IT TO GET ANSWER !
                 </h3>

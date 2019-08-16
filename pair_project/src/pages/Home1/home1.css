@@ -4,7 +4,9 @@
   text-decoration: none;
   color: white;
 }
-
+.link:hover {
+  color: white;
+}
 .jackInTheBox {
   color: #f64b57;
   font-size: 50px;
