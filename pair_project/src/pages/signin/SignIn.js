@@ -35,85 +35,99 @@ class SignIn extends React.Component {
   render() {
     return (
       <div
-        className="text-center container-fluid"
-        style={{
-          // backgroundImage: `url(${loginbg})`,
-          backgroundColor: "#1D1775",
-          height: "800px",
-          width: "100%"
-        }}
+        className="container-fluid"
+        style={{ backgroundColor: "#28209e", color: "white" }}
       >
-        <img
-          className="animated slideInRight"
-          src="https://i.pinimg.com/originals/64/f3/4a/64f34ad8ceb3a4d87c1d8715d05254cf.gif"
-        />
-        <div className="row justify-content-center animated flipInX">
-          <div className="col-6 col-12 text-white">
-            <div>
-              <form style={{ padding: "30px 0px 0px 0px" }}>
-                <table width="100%">
-                  <tr>
-                    <td align="center">
-                      <div className="form-group">
-                        <h2>Log In Form</h2>
-                        <label htmlFor="exampleInputEmail1">
-                          Email address
-                        </label>
+        <div className="row justify-content-center">
+          <div className="col-12 text-center">
+            <img
+              className="animated slideInRight"
+              src="https://i.pinimg.com/originals/64/f3/4a/64f34ad8ceb3a4d87c1d8715d05254cf.gif"
+            />
+            <div className="row justify-content-center animated flipInX">
+              <div className="col-6 col-12 text-white">
+                <div>
+                  <form style={{ padding: "30px 0px 0px 0px" }}>
+                    <table width="100%">
+                      <tr>
+                        <td align="center">
+                          <div className="form-group">
+                            <h2>Log In Form</h2>
+                            <label htmlFor="exampleInputEmail1">
+                              Email address
+                            </label>
 
-                        <div>
-                          <input
-                            style={{ width: "350px" }}
-                            type="email"
-                            className="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            placeholder="Enter email"
-                          />
-                        </div>
+                            <div>
+                              <input
+                                style={{ width: "350px" }}
+                                type="email"
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Enter email"
+                              />
+                            </div>
 
-                        <small id="emailHelp" className="form-text text-muted">
-                          We'll never share your email with anyone else.
-                        </small>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-                <table width="100%">
-                  <tr>
-                    <td align="center">
-                      <div className="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <div>
-                          <input
-                            style={{ width: "350px" }}
-                            type="password"
-                            className="form-control"
-                            id="exampleInputPassword1"
-                            placeholder="Password"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-                <div className="form-group form-check">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label className="form-check-label" for="exampleCheck1">
-                    Check me out
-                  </label>
+                            <small
+                              id="emailHelp"
+                              className="form-text text-muted"
+                            >
+                              We'll never share your email with anyone else.
+                            </small>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%">
+                      <tr>
+                        <td align="center">
+                          <div className="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <div>
+                              <input
+                                style={{ width: "350px" }}
+                                type="password"
+                                className="form-control"
+                                id="exampleInputPassword1"
+                                placeholder="Password"
+                              />
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div className="form-group form-check">
+                      <input
+                        type="checkbox"
+                        className="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label className="form-check-label" for="exampleCheck1">
+                        Check me out
+                      </label>
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-primary"
+                      onClick={() => this.postLogin()}
+                    >
+                      Submit
+                    </button>
+                  </form>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+
+                  <br />
+                  <br />
+                  <br />
                 </div>
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  onClick={() => this.postLogin()}
-                >
-                  Submit
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
