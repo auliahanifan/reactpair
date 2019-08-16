@@ -13,6 +13,7 @@ import Home1 from "./pages/Home1/Home";
 import Cats from "./pages/catquo/fiturCat";
 import awalCats from "./pages/catquo/awalCat";
 import Profile from "./pages/profile/Profile";
+import NotMatch from "./pages/notfound/NotFound";
 // import CustomInput from "./pages/coba";
 import { Redirect } from "react-router-dom";
 
@@ -46,6 +47,7 @@ class MainRoute extends React.Component {
           <Route path="/cats" component={Cats} />
           <Route path="/awalcats" component={awalCats} />
           <Route path="/profile" component={Profile} />
+          <Route component={NotMatch} />
           {/* <Route path="/input" component={CustomInput} /> */}
         </Switch>
       </Router>
