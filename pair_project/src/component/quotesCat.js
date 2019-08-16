@@ -23,7 +23,7 @@ class Quotes extends React.Component {
   }
 
   render() {
-    return <div>"{this.state.data.content}"</div>;
+    return <div>"{this.state.data.content} Meoow."</div>;
   }
 }
 

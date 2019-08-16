@@ -18,27 +18,61 @@ class Home extends React.Component {
   render() {
     return (
       <div
-        className="text-center"
-        style={{
-          backgroundImage: `url(${homebg})`,
-          height: "800px",
-          width: "100%"
-        }}
+        className="container-fluid"
+        style={{ backgroundColor: "#34383a", color: "white" }}
       >
-        <h1
-          className="text-white text-center"
-          style={{ fontSize: "100px", padding: "240px 0px 0px 0px" }}
-        >
-          Time Killer
-        </h1>
-        <h2 className="text-white text-center">The Time Killer App</h2>
-        <br />
-        <br />
-        <Link to="/signin">
-          <button type="button" className="btn btn-primary text-center">
-            <h3>Sign In Now</h3>
-          </button>
-        </Link>
+        <div className="row justify-content-center">
+          <div className="col-12 text-center mt-4">
+            <img
+              className="animated fadeInDownBig"
+              src="https://pbs.twimg.com/profile_images/2251205169/emot-pocong-by-shudai-ajlani-2528ketawa-merem2529.gif-w_200.gif"
+            />
+            <h1
+              className="text-white text-center animated fadeInDown"
+              style={{
+                fontSize: "100px",
+                padding: "0px 0px 0px 0px",
+                fontFamily: '"EB Garamond", serif'
+              }}
+            >
+              Time Killer
+            </h1>
+            <h2
+              className="text-white animated fadeInRight text-center"
+              style={{ fontFamily: '"EB Garamond", serif' }}
+            >
+              Made From Love to Kill Your Time
+            </h2>
+            <br />
+            <br />
+            <Link to="/signin">
+              <button
+                type="button"
+                className="btn animated fadeInLeft btn-primary text-center"
+              >
+                <h3
+                  className="animated zoomIn"
+                  style={{ fontFamily: '"EB Garamond", serif' }}
+                >
+                  Sign In Now
+                </h3>
+              </button>
+            </Link>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <br />
+            <br />
+
+            <br />
+          </div>
+        </div>
       </div>
     );
   }

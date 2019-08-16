@@ -11,10 +11,13 @@ function Header(props) {
   } else {
     return (
       <header>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">
+        <nav
+          class="navbar navbar-dark navbarHitam"
+          style={{ backgroundColor: "#000000" }}
+        >
+          <Link className="navbar-brand" to="/home">
             Time Killer
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -29,21 +32,18 @@ function Header(props) {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Profile
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Login
-                </a>
-              </li>
+              <Link className="navbar-brand" to="/home">
+                <li class="nav-item">Home</li>
+              </Link>
+              <Link className="navbar-brand" to="/profile">
+                <li class="nav-item">Profile</li>
+              </Link>
+              <Link
+                className="navbar-brand"
+                onClick={() => props.setLogin(false)}
+              >
+                <li class="nav-item">Logout</li>
+              </Link>
             </ul>
           </div>
         </nav>

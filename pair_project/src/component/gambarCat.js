@@ -3,7 +3,7 @@ import axios from "axios";
 import "../assets/css/main.css";
 
 const divStyle = {
-  width: "17rem"
+  width: "19rem"
 };
 
 class Gambar extends React.Component {
