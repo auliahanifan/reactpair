@@ -14,7 +14,9 @@ class SignIn extends React.Component {
   }
 
   postLogin = () => {
+    this.props.setLogin(true);
     console.log("berhasil");
+
     const self = this;
     axios
       .post("https://api-todofancy.herokuapp.com/api/auth")

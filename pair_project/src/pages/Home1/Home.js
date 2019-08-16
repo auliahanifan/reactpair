@@ -6,6 +6,9 @@ import Container from "@material-ui/core/Container";
 import Typography from "../../component/typo";
 import "./home1.css";
 import { Link } from "react-router-dom";
+import { connect } from "unistore/react";
+import { actions } from "../../store";
+import { Redirect } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -110,57 +113,68 @@ function Home1(props) {
       link: "/yesno"
     }
   ];
-
-  return (
-    <div className="animated bounce">
-      <Container className={classes.root} component="section">
-        <Typography variant="h4" marked="center" align="center" component="h2">
-          <div className="animated jackInTheBox">Pilih Fiturmu</div>
-        </Typography>
-        <div className={classes.images}>
-          {images.map(image => (
-            <ButtonBase
-              key={image.title}
-              className={classes.imageWrapper}
-              style={{
-                width: image.width
-              }}
-            >
-              <div
-                className={classes.imageSrc}
+  if (props.is_login === false) {
+    return <Redirect to={{ pathname: "/" }} />;
+  } else {
+    return (
+      <div className="animated bounce">
+        <Container className={classes.root} component="section">
+          <Typography
+            variant="h4"
+            marked="center"
+            align="center"
+            component="h2"
+          >
+            <div className="animated jackInTheBox">Pilih Fiturmu</div>
+          </Typography>
+          <div className={classes.images}>
+            {images.map(image => (
+              <ButtonBase
+                key={image.title}
+                className={classes.imageWrapper}
                 style={{
-                  backgroundImage: `url(${image.url})`
+                  width: image.width
                 }}
-              />
-              <div className={classes.imageBackdrop} />
-              <div className={classes.imageButton}>
-                <Typography
-                  component="h3"
-                  variant="h6"
-                  color="inherit"
-                  className={classes.imageTitle}
-                >
-                  <Link
-                    to={image.link}
-                    className="link"
-                    style={{ textDecoration: "none" }}
+              >
+                <div
+                  className={classes.imageSrc}
+                  style={{
+                    backgroundImage: `url(${image.url})`
+                  }}
+                />
+                <div className={classes.imageBackdrop} />
+                <div className={classes.imageButton}>
+                  <Typography
+                    component="h3"
+                    variant="h6"
+                    color="inherit"
+                    className={classes.imageTitle}
                   >
-                    {image.title}
-                  </Link>
+                    <Link
+                      to={image.link}
+                      className="link"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {image.title}
+                    </Link>
 
-                  <div className={classes.imageMarked} />
-                </Typography>
-              </div>
-            </ButtonBase>
-          ))}
-        </div>
-      </Container>
-    </div>
-  );
+                    <div className={classes.imageMarked} />
+                  </Typography>
+                </div>
+              </ButtonBase>
+            ))}
+          </div>
+        </Container>
+      </div>
+    );
+  }
 }
 
 Home1.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Home1);
+export default connect(
+  "is_login",
+  actions
+)(withStyles(styles)(Home1));
