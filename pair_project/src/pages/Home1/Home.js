@@ -135,6 +135,7 @@ function Home1(props) {
                 style={{
                   width: image.width
                 }}
+                onClick={() => props.history.push(image.link)}
               >
                 <div
                   className={classes.imageSrc}
@@ -144,22 +145,28 @@ function Home1(props) {
                 />
                 <div className={classes.imageBackdrop} />
                 <div className={classes.imageButton}>
+                  {/* <Link
+                    to={image.link}
+                    className="link"
+                    style={{ textDecoration: "none" }}
+                  > */}
                   <Typography
                     component="h3"
                     variant="h6"
                     color="inherit"
                     className={classes.imageTitle}
                   >
-                    <Link
+                    {/* <Link
                       to={image.link}
                       className="link"
                       style={{ textDecoration: "none" }}
-                    >
-                      {image.title}
-                    </Link>
+                    > */}
+                    {image.title}
+                    {/* </Link> */}
 
                     <div className={classes.imageMarked} />
                   </Typography>
+                  {/* </Link> */}
                 </div>
               </ButtonBase>
             ))}

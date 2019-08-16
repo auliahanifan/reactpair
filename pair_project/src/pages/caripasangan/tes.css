@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:700&display=swap");
+
 .backCol {
   height: 664px;
   background-color: #de3c4b;
+  font-family: "EB Garamond", serif;
 }
 .isi img {
   border-radius: 50%;
