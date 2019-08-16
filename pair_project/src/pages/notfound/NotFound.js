@@ -7,7 +7,7 @@ import { Redirect } from "react-router-dom";
 import robot from "./robot.png";
 import sorry from "./sorry.png";
 
-class Profile extends React.Component {
+class NotMatch extends React.Component {
   //   state = { link: "https://yesno.wtf/api" };
   constructor(props) {
     super(props);
@@ -68,4 +68,4 @@ class Profile extends React.Component {
 export default connect(
   "is_login",
   actions
-)(Profile);
+)(NotMatch);

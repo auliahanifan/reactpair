@@ -14,13 +14,21 @@ class CariPasangan1 extends React.Component {
   };
 
   submitHandleF = () => {
+    this.props.ubahName(this.props.name.replace(/\s/g, ""));
+    console.log(this.props.name.replace(/\s/g, ""));
     this.props.ubahMale();
-    this.props.history.push(`/ohjodohku/female/${this.props.name}`);
+    this.props.history.push(
+      `/ohjodohku/female/${this.props.name.replace(/\s/g, "")}`
+    );
   };
 
   submitHandleM = () => {
+    this.props.ubahName(this.props.name.replace(/\s/g, ""));
     this.props.ubahFemale();
-    this.props.history.push(`/ohjodohku/male/${this.props.name}`);
+    console.log(this.props.name.replace(/\s/g, ""));
+    this.props.history.push(
+      `/ohjodohku/male/${this.props.name.replace(/\s/g, "")}`
+    );
   };
 
   render() {
