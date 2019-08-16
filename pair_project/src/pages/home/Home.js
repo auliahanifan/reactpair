@@ -18,55 +18,57 @@ class Home extends React.Component {
   render() {
     return (
       <div
-        className="container-fluid text-center"
-        style={{
-          // backgroundImage: `url(${homebg})`,
-          backgroundColor: "#000000"
-        }}
+        className="container-fluid"
+        style={{ backgroundColor: "#34383a", color: "white" }}
       >
-        <h1
-          className="text-white text-center animated fadeInDown"
-          style={{
-            fontSize: "100px",
-            padding: "240px 0px 0px 0px",
-            fontFamily: '"EB Garamond", serif'
-          }}
-        >
-          Time Killer
-        </h1>
-        <h2
-          className="text-white animated fadeInRight text-center"
-          style={{ fontFamily: '"EB Garamond", serif' }}
-        >
-          Made From Love to Kill Your Time
-        </h2>
-        <br />
-        <br />
-        <Link to="/signin">
-          <button
-            type="button"
-            className="btn animated fadeInLeft btn-primary text-center"
-          >
-            <h3
-              className="animated zoomIn"
+        <div className="row justify-content-center">
+          <div className="col-12 text-center">
+            <h1
+              className="text-white text-center animated fadeInDown"
+              style={{
+                fontSize: "100px",
+                padding: "240px 0px 0px 0px",
+                fontFamily: '"EB Garamond", serif'
+              }}
+            >
+              Time Killer
+            </h1>
+            <h2
+              className="text-white animated fadeInRight text-center"
               style={{ fontFamily: '"EB Garamond", serif' }}
             >
-              Sign In Now
-            </h3>
-          </button>
-        </Link>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+              Made From Love to Kill Your Time
+            </h2>
+            <br />
+            <br />
+            <Link to="/signin">
+              <button
+                type="button"
+                className="btn animated fadeInLeft btn-primary text-center"
+              >
+                <h3
+                  className="animated zoomIn"
+                  style={{ fontFamily: '"EB Garamond", serif' }}
+                >
+                  Sign In Now
+                </h3>
+              </button>
+            </Link>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
-        <br />
-        <br />
-        <br />
+            <br />
+            <br />
+
+            <br />
+          </div>
+        </div>
       </div>
     );
   }
