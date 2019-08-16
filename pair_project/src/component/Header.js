@@ -32,19 +32,15 @@ function Header(props) {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Profile
-                </a>
-              </li>
-              <li class="nav-item">
-                <Link onClick={() => props.setLogin(false)}>Logout</Link>
-              </li>
+              <Link to="/home">
+                <li class="nav-item">Home</li>
+              </Link>
+              <Link to="/profile">
+                <li class="nav-item">Profile</li>
+              </Link>
+              <Link onClick={() => props.setLogin(false)}>
+                <li class="nav-item">Logout</li>
+              </Link>
             </ul>
           </div>
         </nav>

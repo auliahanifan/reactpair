@@ -113,6 +113,7 @@ function Home1(props) {
       link: "/yesno"
     }
   ];
+
   if (props.is_login === false) {
     return <Redirect to={{ pathname: "/" }} />;
   } else {
