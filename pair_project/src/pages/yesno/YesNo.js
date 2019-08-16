@@ -47,7 +47,7 @@ class YesNo extends React.Component {
     return (
       <div
         className="container-fluid"
-        style={{ backgroundColor: "blue", color: "white" }}
+        style={{ backgroundColor: "#01A088", color: "white" }}
       >
         <div className="row justify-content-center">
           <div className="col-1 text-right">

@@ -20,23 +20,41 @@ class Home extends React.Component {
       <div
         className="text-center"
         style={{
-          backgroundImage: `url(${homebg})`,
+          // backgroundImage: `url(${homebg})`,
+          backgroundColor: "#000000",
           height: "800px",
           width: "100%"
         }}
       >
         <h1
-          className="text-white text-center"
-          style={{ fontSize: "100px", padding: "240px 0px 0px 0px" }}
+          className="text-white text-center animated fadeInDown"
+          style={{
+            fontSize: "100px",
+            padding: "240px 0px 0px 0px",
+            fontFamily: '"EB Garamond", serif'
+          }}
         >
           Time Killer
         </h1>
-        <h2 className="text-white text-center">The Time Killer App</h2>
+        <h2
+          className="text-white animated fadeInRight text-center"
+          style={{ fontFamily: '"EB Garamond", serif' }}
+        >
+          The Time Killer App
+        </h2>
         <br />
         <br />
         <Link to="/signin">
-          <button type="button" className="btn btn-primary text-center">
-            <h3>Sign In Now</h3>
+          <button
+            type="button"
+            className="btn animated fadeInLeft btn-primary text-center"
+          >
+            <h3
+              className="animated zoomIn"
+              style={{ fontFamily: '"EB Garamond", serif' }}
+            >
+              Sign In Now
+            </h3>
           </button>
         </Link>
       </div>

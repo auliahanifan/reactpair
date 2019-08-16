@@ -20,10 +20,14 @@ class Tes extends React.Component {
       return <Redirect to={{ pathname: "/" }} />;
     } else {
       return (
-        <div className="isi">
-          <div className="container mt-5">
+        <div className="isi backCol">
+          <div className="container">
             <div className="row justify-content-center">
-              <img src={this.props.listName.photo} style={{ height: "50%" }} />
+              <img
+                className="mt-5"
+                src={this.props.listName.photo}
+                style={{ height: "50%" }}
+              />
               <br />
             </div>
             <div className="row justify-content-center">
@@ -39,17 +43,27 @@ class Tes extends React.Component {
                 color: "white"
               }}
             >
-              <div className="card-body">
-                👤 {this.props.listName.gender}
-                <br />
-                🌐 {this.props.listName.region}
-                <br />
-                📞 {this.props.listName.phone}
-                <br />
-                ✉️ {this.props.listName.email}
-                <br />
-                🎂 {this.props.listName.age}
-                <br />
+              <div className="row text-center justify-content-center">
+                <div className="col-md-12">
+                  <table>
+                    <tr>
+                      <td align="center">
+                        <div className="card-body">
+                          👤 {this.props.listName.gender}
+                          <br />
+                          🌐 {this.props.listName.region}
+                          <br />
+                          📞 {this.props.listName.phone}
+                          <br />
+                          ✉️ {this.props.listName.email}
+                          <br />
+                          🎂 {this.props.listName.age}
+                          <br />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
