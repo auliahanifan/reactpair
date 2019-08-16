@@ -3,6 +3,8 @@ import { connect } from "unistore/react";
 import { actions } from "../../store";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import "./tes.css";
 
 class Tes extends React.Component {
@@ -24,7 +26,7 @@ class Tes extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <img
-                className="mt-5"
+                className="mt-3"
                 src={this.props.listName.photo}
                 style={{ height: "50%" }}
               />
@@ -44,7 +46,7 @@ class Tes extends React.Component {
               }}
             >
               <div className="row text-center justify-content-center">
-                <div className="col-md-12">
+                <div className="col-md-12 mb-2">
                   <table>
                     <tr>
                       <td align="center">
@@ -64,6 +66,15 @@ class Tes extends React.Component {
                     </tr>
                   </table>
                 </div>
+              </div>
+            </div>
+            <div className="row text-center justify-content-center">
+              <div className="col">
+                <Link to="/carijodoh">
+                  <button type="button" className="btn btn-primary">
+                    Try Again
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

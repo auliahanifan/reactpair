@@ -10,7 +10,8 @@ export const store = createStore({
   question: "",
   pic: "",
   listName: [],
-  gender: ""
+  gender: "",
+  name: ""
 });
 
 export const actions = store => ({
@@ -46,5 +47,8 @@ export const actions = store => ({
   },
   ubahListName: (state, baru) => {
     store.setState({ listName: baru });
+  },
+  ubahName: (state, baru) => {
+    store.setState({ name: baru });
   }
 });
